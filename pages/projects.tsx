@@ -1,15 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-  PageHeader,
-  Image,
-  Box,
-  Heading,
-} from "grommet";
-import { Favorite, ShareOption } from "grommet-icons";
+import { PageHeader } from "grommet";
 import React from "react";
 import PortfolioCard from "../components/portfoliocard";
 
