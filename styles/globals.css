@@ -24,3 +24,28 @@ a {
     background: black;
   }
 }
+
+.borderclass {
+  border: 1px solid black;
+}
+
+.header__link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  margin: 20px 0px;
+}
+
+.card__image {
+  margin-right: 20px;
+}
+
+.card__header {
+  margin: 20px 20px 0px 20px;
+}
+
+.card__body {
+  margin: 20px 20px 0px 20px;
+}
