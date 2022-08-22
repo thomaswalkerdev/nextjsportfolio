@@ -6,8 +6,14 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Page kind="wide">
-        <Box flex align="center" justify="center" width="100%">
-          <Box flex align="center" justify="center" width={{ max: "1200px" }}>
+        <Box flex align="center">
+          <Box
+            flex
+            direction="column"
+            align="start"
+            justify="center"
+            width={{ max: "800px" }}
+          >
             {children}
           </Box>
         </Box>

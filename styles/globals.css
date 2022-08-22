@@ -57,3 +57,17 @@ a {
   align-items: center;
   width: 100%;
 }
+
+.page__wrapper {
+  max-width: 800px;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.snippet__wrapper {
+  height: 200px;
+  width: 100%;
+  margin: 20px 0px;
+}
