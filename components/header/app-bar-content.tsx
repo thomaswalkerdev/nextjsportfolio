@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 export const AppBarContent = () => (
-  <>
+  <div className="header__content">
     <Heading level="3" margin="none">
       Thomas Walker
     </Heading>
@@ -18,5 +18,5 @@ export const AppBarContent = () => (
         <a className="header__link">Experience</a>
       </Link>
     </div>
-  </>
+  </div>
 );
