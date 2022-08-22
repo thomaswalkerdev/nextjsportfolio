@@ -21,6 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        <AppBar>
+          <AppBarContent />
+        </AppBar>
       </Grommet>
     </Provider>
   );

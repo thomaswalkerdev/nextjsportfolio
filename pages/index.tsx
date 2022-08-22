@@ -7,10 +7,12 @@ import ProjectsSnippet from "../components/projects-snippet";
 function Home() {
   return (
     <div className="page__wrapper">
-      <PageHeader
-        title="Thomas Walker"
-        subtitle="Full Stack Software Developer"
-      />
+      <div className="homepage__headerwrapper">
+        <PageHeader
+          title="Thomas Walker"
+          subtitle="Full Stack Software Developer"
+        />
+      </div>
 
       <ExperienceSnippet />
       <ProjectsSnippet />
