@@ -2,7 +2,7 @@ import { Heading } from "grommet";
 import Link from "next/link";
 import React from "react";
 
-export const AppBarContent = () => (
+export const HeaderContent = () => (
   <div className="header__content">
     <Heading level="3" margin="none">
       Thomas Walker

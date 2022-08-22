@@ -5,8 +5,9 @@ import { Box, grommet, Grommet } from "grommet";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
 import { AppBar } from "../components/header/app-bar";
-import { AppBarContent } from "../components/header/app-bar-content";
+import { HeaderContent } from "../components/header/header-content";
 import Head from "next/head";
+import { FooterContent } from "../components/header/footer-content";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -16,13 +17,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           <title>Thomas Walker</title>
         </Head>
         <AppBar>
-          <AppBarContent />
+          <HeaderContent />
         </AppBar>
         <Layout>
           <Component {...pageProps} />
         </Layout>
         <AppBar>
-          <AppBarContent />
+          <FooterContent />
         </AppBar>
       </Grommet>
     </Provider>

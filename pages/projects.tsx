@@ -1,6 +1,6 @@
 import { PageHeader } from "grommet";
 import React from "react";
-import PortfolioCard from "../components/portfoliocard";
+import PortfolioCard from "../components/portfolio/portfoliocard";
 
 function Projects() {
   return (
