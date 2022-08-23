@@ -1,4 +1,5 @@
-import { Heading } from "grommet";
+import { Button, Heading } from "grommet";
+import { Favorite } from "grommet-icons";
 import Link from "next/link";
 import React from "react";
 
@@ -7,6 +8,10 @@ export const FooterContent = () => (
     <Heading level="3" margin="none">
       Thomas Walker
     </Heading>
-    <div>Some Copyright and Icon Links</div>
+    <div>
+      Some Copyright
+      <Button icon={<Favorite color="red" />} hoverIndicator />
+      <Button icon={<Favorite color="red" />} hoverIndicator />
+    </div>
   </div>
 );
