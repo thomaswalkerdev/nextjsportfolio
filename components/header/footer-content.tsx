@@ -1,6 +1,5 @@
 import { Button, Heading } from "grommet";
 import { Favorite } from "grommet-icons";
-import Link from "next/link";
 import React from "react";
 
 export const FooterContent = () => (

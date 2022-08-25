@@ -1,4 +1,4 @@
-import { Box, PageContent } from "grommet";
+import { Box } from "grommet";
 import { Page } from "grommet/components/Page";
 import React from "react";
 
