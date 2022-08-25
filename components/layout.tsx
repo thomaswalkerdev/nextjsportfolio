@@ -12,7 +12,7 @@ export default function Layout({ children }: any) {
             direction="column"
             align="start"
             justify="center"
-            width={{ max: "800px" }}
+            width={{ max: "1100px" }}
           >
             {children}
           </Box>
