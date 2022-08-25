@@ -1,5 +1,5 @@
 import { Button, Heading } from "grommet";
-import { Favorite } from "grommet-icons";
+import { Github } from "grommet-icons";
 import React from "react";
 
 export const FooterContent = () => (
@@ -7,10 +7,15 @@ export const FooterContent = () => (
     <Heading level="3" margin="none">
       Thomas Walker
     </Heading>
-    <div>
-      Some Copyright
-      <Button icon={<Favorite color="red" />} hoverIndicator />
-      <Button icon={<Favorite color="red" />} hoverIndicator />
+    <div className="footer__madeby">
+      Made by Tom Walker
+      <a
+        href="https://www.github.com/thomaswalkerdev"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Button icon={<Github color="white" />} hoverIndicator />
+      </a>
     </div>
   </div>
 );
