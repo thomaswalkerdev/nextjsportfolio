@@ -1,4 +1,4 @@
-import "../styles/base.scss";
+import "../styles/_styles.scss";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout";
 import { grommet, Grommet } from "grommet";
