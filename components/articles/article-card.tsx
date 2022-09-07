@@ -3,21 +3,16 @@ import { FormNextLink } from "grommet-icons";
 import Link from "next/link";
 import React from "react";
 
-function ArticleCard() {
+function ArticleCard(props: IArticleCardProps) {
   return (
     <Card background="light-6" className="articles__card">
-      <CardHeader pad="small">Some Article</CardHeader>
+      <CardHeader pad="small">{props.header}</CardHeader>
       <CardBody pad="small" className="articles__card-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores qui
-        fugit dolorem magni aut labore, incidunt magnam error earum recusandae
-        assumenda vel temporibus, tempora enim ullam perferendis? Perspiciatis,
-        dolor saepe! Nobis vero ea accusamus id, magnam praesentium quidem aut
-        ullam possimus cupiditate! Ut asperiores, soluta amet vel ad, ab, ipsam
-        eos corporis quam voluptatum debitis vitae impedit quis ipsum at?
+        {props.body}
       </CardBody>
       <CardFooter pad={{ horizontal: "small" }} background="light-6">
         <div className="articles__card-footer">
-          <Link href="/articles/abc">
+          <Link href={"/articles/" + props.header.substring(-1)}>
             <div className="readmore__wrapper">
               <p>Read More</p>
               <Button icon={<FormNextLink color="black" />} hoverIndicator />
@@ -30,3 +25,8 @@ function ArticleCard() {
 }
 
 export default ArticleCard;
+
+interface IArticleCardProps {
+  header: string;
+  body: string;
+}
