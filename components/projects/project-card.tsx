@@ -3,21 +3,16 @@ import { FormNextLink } from "grommet-icons";
 import Link from "next/link";
 import React from "react";
 
-function ProjectCard() {
+function ProjectCard(props: IProjectCardProps) {
   return (
     <Card background="light-6" className="project__card">
-      <CardHeader pad="small">Some Article</CardHeader>
+      <CardHeader pad="small">{props.header}</CardHeader>
       <CardBody pad="small" className="projects__card-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores qui
-        fugit dolorem magni aut labore, incidunt magnam error earum recusandae
-        assumenda vel temporibus, tempora enim ullam perferendis? Perspiciatis,
-        dolor saepe! Nobis vero ea accusamus id, magnam praesentium quidem aut
-        ullam possimus cupiditate! Ut asperiores, soluta amet vel ad, ab, ipsam
-        eos corporis quam voluptatum debitis vitae impedit quis ipsum at?{" "}
+        {props.body}
       </CardBody>
       <CardFooter pad={{ horizontal: "small" }} background="light-6">
         <div className="projects__card-footer">
-          <Link href="/projects/abc">
+          <Link href={"/projects/" + props.header.substring(-1)}>
             <div className="readmore__wrapper">
               <p>Read More</p>
               <Button icon={<FormNextLink color="black" />} hoverIndicator />
@@ -30,3 +25,8 @@ function ProjectCard() {
 }
 
 export default ProjectCard;
+
+interface IProjectCardProps {
+  header: string;
+  body: string;
+}
